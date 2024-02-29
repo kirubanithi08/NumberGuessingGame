@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class NumberGuessingGame {
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
-		scn.close();
+		
 		
 		Random rdm=new Random();
 		int rd=rdm.nextInt(100)+1;
@@ -19,7 +19,7 @@ public class NumberGuessingGame {
 			count++;			
 		 if(guess==rd) {
 			System.out.println("You Guess is correct! you win!");
-			System.out.println( "its your" +count+ "try");
+			System.out.println( "its your "+count+"th try");
 			break;
 		}
 		else if (guess>rd) {
